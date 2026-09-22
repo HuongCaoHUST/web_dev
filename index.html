@@ -5,21 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A minimal Nginx Hello World site">
     <title>Hello World</title>
-    <style>
-      :root { color-scheme: light dark; }
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: grid;
-        place-items: center;
-        font-family: system-ui, sans-serif;
-        background: #31c06a;
-        color: #f8fafc;
-      }
-      h1 { font-size: clamp(2.5rem, 10vw, 6rem); }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <main class="hero-card">
+      <div class="status-pill" aria-label="Website status: online">
+        <span class="status-dot" aria-hidden="true"></span>
+        Online and ready
+      </div>
+
+      <p class="eyebrow">A small start</p>
+      <h1>Hello <span>World!</span></h1>
+      <p class="intro">
+        A simple, polished starting point served by Nginx.
+      </p>
+
+      <div class="card-footer">
+        <span class="footer-line" aria-hidden="true"></span>
+        <span>Built for the web</span>
+      </div>
+    </main>
   </body>
 </html>
